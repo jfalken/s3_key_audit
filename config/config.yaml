@@ -1,0 +1,24 @@
+# When populated, this file contains sensitive info 
+# Handle appropriately. Don't commit this to a repo.
+
+# Logfile Details
+log:
+    file: s3_grants_audit.log
+    format: '[%(asctime)s] [%(levelname)s] - %(message)s'
+    dateformat: '%Y-%m-%d %H:%M:%S'
+
+aws_accounts:
+    - name: account1
+      key: aws_access_key
+      secret: secret
+    - name: account2
+      key: aws_access_key
+      secret: secret
+
+# buckets listed here won't be checked. this is case sensitive.
+# If you have nothing to exclude, you can leave this alone.
+ignore_buckets:
+    - bucket1
+    - bucket-2
+    - bucket.name.3
+    - "bucket4"

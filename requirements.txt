@@ -1,0 +1,4 @@
+PyYAML==3.11
+boto==2.37.0
+pymongo==2.8
+wsgiref==0.1.2
